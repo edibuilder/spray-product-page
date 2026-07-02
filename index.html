@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegante — Spray.Co</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/reviews.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a href="#home" class="logo">Elegante</a>
+        <nav class="navigation">
+            <a href="#home" class="active">Home</a>
+            <a href="#service">About</a>
+            <a href="#reviews">Reviews</a>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Contact</a>
+                <div class="dropdown-content">
+                    <a href="https://facebook.com" target="_blank">
+                        <span class="social-icon">📘</span> Facebook
+                    </a>
+                    <a href="https://instagram.com" target="_blank">
+                        <span class="social-icon">📷</span> Instagram
+                    </a>
+                    <a href="mailto:example@email.com">
+                        <span class="social-icon">✉️</span> Email
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <div class="header-actions">
+            <button class="account-btn" id="account-btn" data-logged-in="false">Sign In</button>
+            <div class="cart-wishlist-icons">
+                <button class="cart-icon-btn" id="cartIcon">
+                    🛒 <span id="cart-count" class="cart-count">0</span>
+                </button>
+                <button class="wishlist-icon-btn" id="wishlistIcon">
+                    ❤️ <span id="wishlist-count" class="wishlist-count">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div id="home" class="pimg1">
+        <div class="ptext animate-on-scroll zoom">
+            <span class="hero-eyebrow">Elegante Eau de Parfum</span>
+            <span class="border">YOUR WAY TO BE DIFFERENT</span>
+        </div>
+    </div>
+
+    <section id="service" class="section">
+        <span class="eyebrow">The Collection</span>
+        <h2>Our Spray</h2>
+        <hr>
+        <div class="product-gallery">
+            <div class="product-img product-img1 animate-on-scroll fade-up delay-1"></div>
+            <div class="product-img product-img2 animate-on-scroll fade-up delay-2"></div>
+            <div class="product-img product-img3 animate-on-scroll fade-up delay-3"></div>
+        </div>
+        <div class="product-description animate-on-scroll fade-up">
+            <p>Elegante is composed in small batches from responsibly sourced botanicals, built to unfold slowly over the course of a day rather than announce itself all at once.</p>
+            <p>Crafted with natural ingredients and engineered for long-lasting freshness — a signature scent for everyday elegance.</p>
+        </div>
+    </section>
+
+    <section class="product-section">
+        <div class="product-container animate-on-scroll zoom">
+            <div class="product-content">
+                <span class="product-category">Premium Blend</span>
+                <h1 class="product-title">Elegante</h1>
+
+                <div class="product-rating">
+                    <div class="stars">
+                        <span>★</span>
+                        <span>★</span>
+                        <span>★</span>
+                        <span>★</span>
+                        <span>★</span>
+                        <span class="rating-text">4.9/5 (128 Reviews)</span>
+                    </div>
+                </div>
+
+                <p class="product-description">
+                    A green, golden fragrance built in three movements — bright top notes that
+                    open on contact, a warm floral heart, and a base that lingers long after.
+                </p>
+
+                <div class="product-features">
+                    <div class="feature">
+                        <span class="feature-icon">Top</span>
+                        <span class="feature-name">Bergamot &amp; Leaf</span>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">Heart</span>
+                        <span class="feature-name">Jasmine &amp; Rose</span>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">Base</span>
+                        <span class="feature-name">Amber &amp; Musk</span>
+                    </div>
+                </div>
+
+                <div class="product-pricing">
+                    <div class="price">
+                        <span class="current-price">$89.99</span>
+                        <span class="old-price">$129.99</span>
+                        <span class="discount">-30%</span>
+                    </div>
+                    <p class="price-note">One-time payment, lifetime scent memory</p>
+                </div>
+
+                <div class="countdown-timer">
+                    <h4>Limited Time Offer</h4>
+                    <div class="timer" id="timer">
+                        <div class="time-box">
+                            <span id="days">00</span>
+                            <span>Days</span>
+                        </div>
+                        <div class="time-box">
+                            <span id="hours">00</span>
+                            <span>Hours</span>
+                        </div>
+                        <div class="time-box">
+                            <span id="minutes">00</span>
+                            <span>Minutes</span>
+                        </div>
+                        <div class="time-box">
+                            <span id="seconds">00</span>
+                            <span>Seconds</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-actions">
+                    <button class="btn-primary">
+                        <span class="btn-icon">🛒</span>
+                        Add to Cart
+                    </button>
+                    <button class="btn-secondary">
+                        <span class="btn-icon">❤️</span>
+                        Wishlist
+                    </button>
+                </div>
+
+                <div class="product-meta">
+                    <div class="meta-item">
+                        <span class="meta-icon">📦</span>
+                        <span>Free shipping</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-icon">🛡️</span>
+                        <span>30-Day Money Back Guarantee</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-icon">👨‍💻</span>
+                        <span>Free Lifetime Support</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-image">
+                <div class="image-container">
+                    <img src="images/parfume1.png" alt="Elegante Spray — front view" class="main-image">
+                    <div class="image-badge">Best Seller</div>
+                </div>
+
+                <div class="image-thumbnails">
+                    <div class="thumbnail active">
+                        <img src="images/parfume1.png" alt="Front view - Elegante Spray">
+                    </div>
+                    <div class="thumbnail">
+                        <img src="images/parfume2.png" alt="Side view - Elegante Spray">
+                    </div>
+                    <div class="thumbnail">
+                        <img src="images/parfume3.png" alt="Back view - Elegante Spray">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="pimg2">
+        <div class="ptext">
+            <span class="hero-eyebrow">In Their Words</span>
+            <span class="border trans">Customer Reviews</span>
+        </div>
+    </div>
+
+    <section id="reviews" class="section">
+        <span class="eyebrow">Testimonials</span>
+        <h2>What Our Customers Say</h2>
+        <hr>
+        <div class="reviews-container"></div>
+
+        <div class="add-review-section">
+            <h3>Share Your Experience</h3>
+            <form id="review-form" class="review-form">
+                <div class="form-group">
+                    <input type="text" id="reviewer-name" placeholder="Your Name" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Your Rating:</label>
+                    <div class="star-rating" id="star-rating">
+                        <span data-value="1">☆</span>
+                        <span data-value="2">☆</span>
+                        <span data-value="3">☆</span>
+                        <span data-value="4">☆</span>
+                        <span data-value="5">☆</span>
+                    </div>
+                    <input type="hidden" id="rating-value" value="0">
+                </div>
+
+                <div class="form-group">
+                    <textarea id="review-text" rows="4" placeholder="Write your review here..." required></textarea>
+                </div>
+
+                <button type="submit" class="submit-review">Submit Review</button>
+                <p id="review-message" class="review-message"></p>
+            </form>
+        </div>
+    </section>
+
+    <section class="newsletter-section">
+        <div class="newsletter-container">
+            <h2>Stay Updated</h2>
+            <hr>
+            <p>Subscribe to our newsletter and get exclusive offers, new product alerts, and <strong>10% off on future purchases</strong>!</p>
+            <form id="newsletter-form">
+                <input type="email" id="newsletter-email" placeholder="Enter your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+            <p id="newsletter-message" class="message"></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Elegante · <strong>Spray.Co</strong>. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/scroll-animation.js"></script>
+    <script src="js/newsletter.js"></script>
+    <script src="js/cart-wishlist.js"></script>
+    <script src="js/reviews.js"></script>
+    <script src="js/product-gallery.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/auth-ui.js"></script>
+</body>
+</html>
